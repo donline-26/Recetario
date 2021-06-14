@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <h1 style="color:blue;">RECETARIO</h1>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-image: url('{% static "images/gf.jpg"%}');
+  background-color: #cccccc;
+  background-size: 1400px 800px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+.logout{font-size: 25px;}
+
+</style>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#chat">chat</a>
+  <a href="#feedback">feedback</a>
+  <a href="#recipe">recipe</a>
+  <div class="topnav-right">
+  </div>
+</div>
+<div style="padding-left:16px">
+</div>
+<button type="button" class="logout" onclick="alert('logout successfully')">logout</button>
+</body>
+
+</html>

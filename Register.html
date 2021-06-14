@@ -1,0 +1,63 @@
+{% load static %}
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title> </title>
+</head>
+<style>
+    body {
+  background-image: url('{% static "images/reg.png"%}');
+  background-color: #cccccc;
+  background-size: 1400px 800px;
+  font-family: Arial, Helvetica, sans-serif;
+* box-sizing: border-box;
+  }
+  </style>
+        <h1>User Registration</h1>
+<style>
+  input[type=text], input[type=password], input[type=email],input[type=phone] {
+  width: 20%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+.cancel{font-size: 20px;}
+.register{font-size: 20px;}
+.register{background-color: #4CAF50;}
+.cancel {background-color: #f44336;}
+</style>
+            <form method="POST">
+                <center>
+                <font color="orange">
+            <p>Firstname</p>
+            <input type="text" name="username" placeholder="Enter firstname" required="">
+                    <p>lastname</p>
+            <input type="text" name="username" placeholder="Enter lastname" required="">
+            <p>Email</p>
+            <input type="email" name="email" placeholder="Enter Email" required="">
+                    <p>phone</p>
+                    <input type="phone"  name="phone" placeholder="123-45-678" required="">
+                    <p>Password</p>
+            <input type="password" name="password" placeholder="Enter Password" required="">
+
+           <br>
+            <button type="button" class="cancel" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+        <button type="submit" class="register">Register</button>
+        <br>
+                </font>
+                    </center>
+            </form>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</html>

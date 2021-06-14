@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<h1 style="color:#ff2b9e;">ADD RECIPE</h1>
+<style>
+  input[type=text],input[type=file] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+.save{font-size: 20px;}
+.save{background-color: #4CAF50;}
+</style>
+<body bgcolor="#270943">
+            <form method="POST">
+                <center>
+                <font color="orange">
+            <p>Recipe name</p>
+            <input type="text" name="recipe_name" placeholder="Enter recipe name" required="">
+                    <p>Recipe type</p>
+            <input type="text" name="recipe type" placeholder="Enter recipe type" required="">
+            <p>Ingredients</p>
+            <input type="text" name="ingredients" placeholder="Enter ingredients" required="">
+                    <p>Recipe</p>
+                    <input type="text"  name="recipe" placeholder="enter recipe" required="">
+
+                    <p>upload picture</p>
+            <input type="file" id="myFile" name="filename">
+
+                    <p>video link</p>
+            <input type="text" name="link" placeholder="Enter link" required="">
+
+           <br>
+
+        <button type="submit" class="save">save</button>
+        <br>
+                </font>
+                    </center>
+            </form>
+
+
+</body>
+</html>
